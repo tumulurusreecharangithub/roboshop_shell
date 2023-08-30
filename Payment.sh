@@ -1,3 +1,5 @@
+#! /usr/bin/bash
+
 yum install python36 gcc python3-devel -y
 
 useradd roboshop

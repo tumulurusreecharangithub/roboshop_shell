@@ -1,3 +1,5 @@
+#! /usr/bin/bash
+
 curl -s -L -o /etc/yum.repos.d/mysql.repo https://raw.githubusercontent.com/roboshop-devops-project/mysql/main/mysql.repo
 
 curl -s -L -o /etc/yum.repos.d/mysql.repo https://raw.githubusercontent.com/roboshop-devops-project/mysql/main/mysql.repo
@@ -20,6 +22,6 @@ uninstall plugin validate_password;
 curl -s -L -o /tmp/mysql.zip "https://github.com/roboshop-devops-project/mysql/archive/main.zip"
 
 cd /tmp
-unzip mysql.zip
+unzip -o mysql.zip
 cd mysql-main
 mysql -u root -pRoboShop@1 <shipping.sql

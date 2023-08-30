@@ -1,3 +1,5 @@
+#! /usr/bin/bash
+
 curl --silent --location https://rpm.nodesource.com/setup_16.x | sudo bash -
 yum install nodejs -y
 
@@ -8,7 +10,7 @@ useradd roboshop
 
 curl -s -L -o /tmp/cart.zip "https://github.com/roboshop-devops-project/cart/archive/main.zip"
 cd /home/roboshop
-unzip /tmp/cart.zip
+unzip -o /tmp/cart.zip
 mv cart-main cart
 cd cart
 npm install
